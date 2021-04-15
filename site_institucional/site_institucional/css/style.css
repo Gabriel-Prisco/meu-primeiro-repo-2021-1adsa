@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Nunito Sans, sans-serif !important;
+    margin: 0;
+}
+
+.header {
+    background-color: #272626;
+    color: white;
+    padding: 9px;
+    overflow: auto; 
+    border-bottom: 5px solid #193cd8 ;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.4); 
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999 !important;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.titulo {
+    float: left;
+    margin: 0.5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a :hover{
+    color:#193cd8 ;
+}
+
+.destaque {
+    color: #193cd8;
+}
+
+.navbar {
+    float: right;
+    color: #ffffff;
+    list-style: none;
+    text-align: right;
+}
+
+
+.item_menu {
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Banner */
+
+.banner{
+    margin-top: 11vh;
+    background-repeat: no-repeat;
+    background-image: url(../img/BannerTermoTech.png);
+    background-size: cover;
+    height: 65vh;
+}
+
+
+/* Saiba mais */
+.btn{
+    font-size: 12pt;
+    border:none;
+    background-color:#193cd8;
+    color:white;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Nunito Sans, sans-serif;
+    cursor: pointer;
+}
+
+.saiba-mais{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #232323;
+    padding-top: 25px;
+    height: 50px;
+}
+
+/*Missão, visão e valores*/
+
+.box img {
+    height: 100px;
+}
+
+.box {
+    margin-top: 20px;
+    overflow: auto;
+}
+.box-item {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding-left: 4.5vh;
+}
+.sobre {
+    margin-top:20px ;
+    overflow: auto;
+    background-color: #2726264f;
+    border-radius: 40px 40px 0px 0px;
+}
+.sobre h2 {    
+    margin: 0;
+    padding: 0;
+    font-size: 30pt;
+    font-weight: bolder;
+}
+
+.desc_sobre {
+    margin-top: 5%;
+    text-align: justify;
+    width: 500px;
+    float: left;
+    overflow: auto;
+}
+
+
+.img_sobre {
+    height: 70vh;
+    float: right;
+    
+}
+
+.final {
+    margin: 0;
+    color: white;
+}
+.footer {
+    margin-top: 5px;
+    border-top: 5px solid #193cd8 ;
+    text-align: center;
+    background-color: #272626;
+    height: 60px;
+    padding-top: 30px;
+}
+

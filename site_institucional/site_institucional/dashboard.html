@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-dashboard.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Praga', 10],
+                ['Mofo', 11],
+                ['Falha de temperatura', 7],
+                ['Termocromia', 5]
+            ]);
+
+            var options = {
+                title: 'Fatores de perda de material',
+                is3D: false,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+    <!-- Grafico Donut -->
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Finalizados', 20],
+                ['Não-Finalizados', 7]
+
+            ]);
+
+            var options = {
+                //   Nome do grafico
+                title: 'Cadastros em nosso site',
+                pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo"><span class="destaque">Termo</span>Tech</h1>
+            <ul class="navbar">
+                <b>
+                    <div class="nav-list">
+                        <a href="index.html">
+                            <li class="item_menu">Sair</span></li>
+                        </a>
+                    </div>
+                </b>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="graph-position">
+
+            <div id="piechart_3d" class="grafico" style="width: 420px; height: 300px;"></div>
+
+            <div id="donutchart" class="grafico" style="width: 420px; height: 300px;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
